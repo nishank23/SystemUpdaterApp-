@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lighko.updates">
+
+    <uses-sdk android:targetSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_CACHE_FILESYSTEM"
+         />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"
+         />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"
+ />
+
+    <application
+        android:name="com.lighko.updates.MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Updates"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name="com.lighko.updates.ui.SettingsActivity"
+            android:exported="false"
+
+            />
+        <activity
+            android:name="com.lighko.updates.ui.HomeActivity2"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.lighko.updates.services.Workers.DownloadService"
+            android:exported="false"
+            />
+
+
+        <service
+            android:name="com.lighko.updates.services.UpdateInstallationService"
+            android:exported="false"
+            />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
+
+
+        <service android:name="com.lighko.updates.services.PrepareUpdateService" />
+        <receiver android:name="com.lighko.updates.services.BrodcastReceivers.ScreenStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+    <protected-broadcast android:name="com.lighko.updates.services.Workers.DownloadService.PROGRESS_UPDATE" />
+
+</manifest>

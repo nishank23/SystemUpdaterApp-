@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    >
+    <TextView
+        android:id="@+id/mtv_updating_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/updating_tips"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/_12sp"
+        />
+    <TextView
+        android:id="@+id/mtv_bullet_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtv_updating_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/bullet"
+        android:textSize="@dimen/_12sp"
+        />
+
+    <TextView
+        android:id="@+id/mtv_tips_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@id/mtv_bullet_1"
+        app:layout_constraintTop_toTopOf="@id/mtv_bullet_1"
+        android:layout_marginStart="8dp"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="@id/mtv_updating_title"
+        android:text="@string/tip_1"
+        />
+    <TextView
+        android:id="@+id/mtv_bullet_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:textSize="@dimen/_12sp"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtv_tips_1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/bullet"
+        />
+
+    <TextView
+        android:id="@+id/mtv_tips_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toEndOf="@id/mtv_bullet_2"
+        app:layout_constraintTop_toTopOf="@id/mtv_bullet_2"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@id/mtv_updating_title"
+        android:text="@string/tip_2"
+        />
+    <TextView
+        android:id="@+id/mtv_bullet_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtv_tips_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+    android:textSize="@dimen/_12sp"
+        android:text="@string/bullet"
+        />
+
+    <TextView
+        android:id="@+id/mtv_tips_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@id/mtv_bullet_3"
+        app:layout_constraintTop_toTopOf="@id/mtv_bullet_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="@id/mtv_updating_title"
+        android:text="@string/tips_3"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

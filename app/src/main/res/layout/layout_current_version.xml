@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:id="@+id/mtv_curr_os_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/os_version"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/_14sp"
+        />
+    <TextView
+        android:id="@+id/mtv_curr_os_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtv_curr_os_title"
+        android:layout_marginTop="@dimen/_16sp"
+        android:text="@string/curr_os_msg"
+        android:textColor="@color/textColorGrey"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/_12sp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

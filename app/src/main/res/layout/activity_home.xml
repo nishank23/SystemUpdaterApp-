@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <ScrollView
+        android:id="@+id/sv_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/rl_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/mtv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:padding="14dp"
+                android:text="@string/lightos_updater"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sp" />
+
+            <TextView
+                android:id="@+id/mtv_update_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="14dp"
+                android:text="Your phone is up to date!"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp" />
+
+            <TextView
+                android:id="@+id/mtv_update_msg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:text="Restart the device to see the wonder"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="12dp"
+
+                android:visibility="gone"
+                android:gravity="center"/>
+
+            <include
+                android:id="@+id/update_tips"
+                layout="@layout/layout_update_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <include
+                android:id="@+id/download"
+                layout="@layout/layout_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                />
+
+            <include
+                android:id="@+id/v_info"
+                layout="@layout/layout_current_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primaryColor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_check_updates"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:backgroundTint="@color/primaryColor"
+            android:elevation="0dp"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0"
+            android:text="@string/check_for_updates"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+
+            android:textStyle="normal"
+            android:visibility="visible"
+
+            app:icon="@drawable/sync"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:rippleColor="@android:color/transparent"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_download"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+
+            android:backgroundTint="@color/primaryColor"
+            android:elevation="0dp"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            app:elevation="10dp"
+            app:icon="@drawable/ic_download"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:rippleColor="@android:color/transparent"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_install"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="42dp"
+            android:background="@null"
+            android:backgroundTint="@color/primaryColor"
+
+            android:elevation="0dp"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0"
+            android:text="@string/install"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            app:elevation="10dp"
+            app:icon="@drawable/ic_update"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:rippleColor="@android:color/transparent"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reboot"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="42dp"
+            android:background="@null"
+            android:backgroundTint="@color/primaryColor"
+
+            android:elevation="0dp"
+            android:focusable="false"
+            android:fontFamily="@font/roboto"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0"
+            android:text="Reboot"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal"
+            android:visibility="invisible"
+            app:elevation="10dp"
+            app:icon="@drawable/reboot"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:rippleColor="@android:color/transparent"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_more"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/containerHigh"
+            android:drawableLeft="@drawable/ic_more"
+            android:drawableTint="@color/black"
+            android:elevation="-2dp"
+            android:focusable="false"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+
+            android:insetBottom="0dp"
+            android:translationX="34dp"
+            app:cornerRadius="120dp"
+            app:elevation="-2dp"
+            app:icon="@drawable/ic_more"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:rippleColor="@color/containerHigh"
+            app:strokeColor="@color/containerHigh"
+            app:strokeWidth="0dp"
+
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/containerHigh"
+        android:progressTint="@color/black"
+        android:progressTintMode="add"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

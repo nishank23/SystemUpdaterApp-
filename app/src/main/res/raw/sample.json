@@ -1,0 +1,15 @@
+{
+    "__name": "name will be visible on UI",
+    "__url": "file:///data/my-sample-ota-builds-dir/ota-002.zip",
+    "__ab_install_type": "NON_STREAMING (from a local file) OR STREAMING (on the fly)",
+    "name": "SAMPLE-cake-release BUILD-12345",
+    "url": "file:///data/my-sample-ota-builds-dir/ota-002.zip",
+    "ab_install_type": "NON_STREAMING",
+
+    "ab_config": {
+        "__": "A/B (seamless) update configurations",
+        "__force_switch_slot": true,
+        "force_switch_slot": false,
+        "verify_payload_metadata": true
+    }
+}

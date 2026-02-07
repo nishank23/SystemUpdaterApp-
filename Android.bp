@@ -1,0 +1,48 @@
+java_library {
+    name: "fetch2",
+    srcs: ["libs/fetch2/jars/classes.jar"],
+}
+
+
+java_library {
+    name: "fetch2core",
+    srcs: ["libs/fetch2core/jars/classes.jar"],
+}
+java_library {
+    name: "work-runtime",
+    srcs: ["libs/work-runtime/classes.jar"],
+}
+
+
+package {
+    // See: http://go/android-license-faq
+    // A large-scale-change added 'default_applicable_licenses' to import
+    // all of the 'license_kinds' from "bootable_recovery_license"
+    // to get the below license kinds:
+    //   SPDX-license-identifier-Apache-2.0
+
+}
+android_app  {
+    name: "SystemUpdaterSample",
+    srcs: [
+        "app/src/main/java/**/*.java",
+    ],
+    static_libs: [
+	    "guava",
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+        "com.google.android.material_material",
+        "androidx.activity_activity",
+        "androidx-constraintlayout_constraintlayout",
+	    "jetbrains-annotations",
+	    "fetch2core",
+        "fetch2",
+        "work-runtime",
+
+    ],
+    sdk_version: "system_current",
+    resource_dirs: ["app/src/main/res"],
+    certificate : "platform",
+    privileged : true
+
+}

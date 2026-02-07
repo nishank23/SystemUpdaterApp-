@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_settings.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_rounded_recycler.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/rounded_recycler.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_reboot.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/reboot.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_more.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_more.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_activity_home2.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/activity_home2.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_custom_track.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/custom_track.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_current_version.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_current_version.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_sync.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/sync.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_simple_popup.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_simple_popup.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_description.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_description.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_arrow_back_ios_24.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/arrow_back_ios_24.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_custom_thumb.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/custom_thumb.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_activity_home.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_wonder.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/wonder.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_activity_settings.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_switch_icon.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/switch_icon.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/raw_sample.json.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/raw/sample.json"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/font_roboto_medium.ttf.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/font/roboto_medium.ttf"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_back.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_back.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_update_tips.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_update_tips.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_item_simple_popup.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/item_simple_popup.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_download.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_download.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_rounded_corner.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/rounded_corner.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_layout_downloading.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/layout_downloading.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_download.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_download.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_rounded_menu.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/rounded_menu.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/font_roboto.ttf.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/font/roboto.ttf"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_rv_style.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/rv_style.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_wb_twighlight.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/wb_twighlight.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/font_roboto_bold.ttf.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/font/roboto_bold.ttf"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/layout_rv_settings_item.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/layout/rv_settings_item.xml"
+    },
+    {
+        "merged": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/build/intermediates/merged_res/debug/drawable_ic_update.xml.flat",
+        "source": "/Users/nishankbansal/Downloads/SystemUpdater-main/app/src/main/res/drawable/ic_update.xml"
+    }
+]

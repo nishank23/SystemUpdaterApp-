@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Updates</string>
+    <string name="lightos_updater">WonderOS Updates</string>
+    <string name="updating_tips">Updating Tips</string>
+    <string name="tip_1">Keeping your phone up to date will make sure that you can enjoy the latest features, and that your device is safe with the latest security updates.</string>
+    <string name="bullet">\u2022</string>
+    <string name="tip_2">Before updating make sure your battery is 50% or more.</string>
+    <string name="tips_3">Updating you phone will take about 5 to 15 minutes, while updating you won’t be able to use it.</string>
+    <string name="os_version">WonderOS Version: 1.0</string>
+    <string name="curr_os_msg">WonderOS is a kosher build operating system, with build in features for the ultra orthodox community, developed by Lighko.</string>
+    <string name="updateicon">updateicon</string>
+    <string name="downloading">Downloading...</string>
+    <string name="check_for_updates">Check for updates</string>
+    <string name="download">Download</string>
+    <string name="install">Install</string>
+    <string name="settings">Updates Settings</string>
+    <string name="auto_download">Automatically download</string>
+    <string name="auto_install">Automatically install</string>
+    <string name="update_available">Update Available</string>
+</resources>

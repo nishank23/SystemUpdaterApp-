@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/containerLowColor">
+
+    <ProgressBar
+        android:id="@+id/pi_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:progressTint="@color/progressColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mtv_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:padding="0dp"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toStartOf="@id/pi_download"
+        app:layout_constraintTop_toBottomOf="@id/pi_download"
+
+        />
+
+    <TextView
+        android:id="@+id/mtv_ttl_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintStart_toEndOf="@id/mtv_down"
+        app:layout_constraintTop_toBottomOf="@id/pi_download"
+
+        />
+
+    <TextView
+        android:id="@+id/mtv_down_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pi_download"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
