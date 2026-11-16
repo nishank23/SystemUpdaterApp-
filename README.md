@@ -6,7 +6,7 @@ It starts from AOSP's SystemUpdaterSample. The sample reads update configs from 
 
 ## What it does
 
-- **Asks the backend for its build.** Sends the device serial number and current build number to `GET /api/v1/update`. The backend picks the device's channel and returns the newest build, or 404 if the device is up to date.
+- **Asks the backend for its build.** Sends the device serial number and current build number to `GET /api/v1/update`. The backend picks the device's channel and returns the newest build, or 404 if the device is up to date. This version checks over HTTP only; a later client build, not public, also listens on the backend's WebSocket and checks as soon as a build is published.
 - **Downloads the OTA package** in the background with Fetch2, with pause, resume and retry.
 - **Applies it with `update_engine`.** Streaming and non-streaming payloads, progress and engine status on screen, suspend, resume, cancel and reset.
 - **Controls the A/B slot switch.** Switch to the new slot on the next reboot (the default), or install now and switch later.
