@@ -1,79 +1,39 @@
-# 🚀 SystemUpdaterApp
+# SystemUpdaterApp-
 
-**SystemUpdaterApp** is a custom Android **system-level updater application** that installs **A/B (seamless) OTA updates** using Android’s internal `update_engine` APIs.
+Privileged Android app that downloads A/B OTA updates from [system-updater-backend](https://github.com/nishank23/system-updater-backend) and installs them through `update_engine`. Built for a client's AOSP-based devices.
 
-Unlike the official Google sample, this implementation fetches **OTA update configurations from a custom backend server**, making it closer to how real production OTA systems work on custom ROMs and OEM devices.
+It starts from AOSP's SystemUpdaterSample. The sample reads update configs from local files; this version gets them from a backend per device.
 
----
+## What it does
 
-## ⭐ Key Highlights
+- **Asks the backend for its build.** Sends the device serial number and current build number to `GET /api/v1/update`. The backend picks the device's channel and returns the newest build, or 404 if the device is up to date.
+- **Downloads the OTA package** in the background with Fetch2, with pause, resume and retry.
+- **Applies it with `update_engine`.** Streaming and non-streaming payloads, progress and engine status on screen, suspend, resume, cancel and reset.
+- **Controls the A/B slot switch.** Switch to the new slot on the next reboot (the default), or install now and switch later.
 
-- A/B (seamless) OTA update support  
-- OTA configurations fetched from a backend server  
-- Streaming & non-streaming update support  
-- Pause / Resume / Stop / Reset update flow  
-- A/B slot switching control  
-- Update progress, engine status, and error reporting  
-- Built using Android **System APIs (`@SystemApi`)**
+## How it ships
 
----
+The app calls `@SystemApi` methods, so it cannot run as a normal app. It is built with the platform tree using [`Android.bp`](Android.bp) as a `privileged` app signed with the `platform` certificate, with permissions granted in [`privapp-permissions-platform.xml`](privapp-permissions-platform.xml). The Gradle build is for editing in Android Studio.
 
-## 🔍 What This Project Demonstrates
+| | |
+|---|---|
+| Language | Java |
+| SDK | min 26, target 30 |
+| Libraries | AndroidX WorkManager, Fetch2, Guava, Material |
+| Needs | AOSP-based build with A/B partitions |
 
-- Real-world **OTA update architecture**
-- Android **system / privileged app development**
-- Use of **hidden Android APIs**
-- Client ↔ backend integration for OTA delivery
-- Interaction with Android `update_engine`
-- Managing update lifecycle and edge cases
+## Project structure
 
----
+```text
+app/src/main/java/com/lighko/updates/
+  UpdateManager.java       wraps UpdateEngine: apply, suspend, resume, reset, slot switch
+  services/                download worker, install service, backend client
+  ui/                      main screen and settings
+  util/                    payload specs, update_engine statuses and error codes
+app/src/androidTest/       config and payload parsing tests with sample OTA files
+Android.bp                 platform build: privileged, platform certificate
+```
 
-## 📦 Core Features
+## License
 
-- 🌐 Fetch OTA update configurations from a backend server
-- 📋 Display available OTA updates in the app UI
-- ▶ Apply OTA packages using `update_engine`
-- ⏸️ Pause and resume ongoing updates
-- 🛑 Stop or reset update attempts
-- 🔄 Switch active A/B slot after update completion
-- 📊 Show current build, update progress, engine status, and errors
-
----
-
-## 🧪 Tested Environment
-
-- ✔ Custom Android OS (AOSP-based)
-- ✔ Physical Android device provided by client
-- ✔ Devices supporting **A/B partitioning**
-- ✔ Rooted / system-level environment
-
-> ⚠️ This app is intended for **custom ROMs, OEM builds, or rooted devices**.  
-> It is **not designed for Play Store distribution**.
-
----
-
-## 💻 Tech Stack
-
-- Android (Kotlin)
-- A/B Seamless OTA Updates
-- Android `update_engine`
-- System / Privileged App APIs
-- Backend-driven OTA configuration system
-
----
-
-## 🏗️ Project Scope
-
-This project focuses on **system-level update workflows** rather than UI polish.  
-It is intended for:
-- Android platform engineers
-- OEM / firmware teams
-- Developers working with AOSP or custom ROMs
-
----
-
-## 📜 License
-
-Apache License 2.0  
-https://www.apache.org/licenses/LICENSE-2.0
+Apache License 2.0, as the AOSP sample it is based on.
